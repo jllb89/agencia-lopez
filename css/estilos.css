@@ -279,6 +279,12 @@ button:hover {
     background-color: #000000;
     color: #ffffff;}
 
+.social__button {
+    transition: all .2s;}
+        
+.social__button:hover {
+    transform: scale(1.2);}
+
 .button__mailing {
     background-color: black;
     color: white;
@@ -437,12 +443,12 @@ PORCENTAJES */
 /* MOBILE */
 @media (min-width: 320px) and (max-width:540px) {
 
-    .cover__home {
-        height: 300px;
+    .img__home{
+        display: none;
     }
 
-    .cover__portfolio {
-        height: 250px;
+    .info {
+        padding-top: 1rem;
     }
 
     .cover__nosotros {
@@ -458,18 +464,22 @@ PORCENTAJES */
         padding-right: 25px;}
     
     h1 {
-        font-size: 18px;}
+        font-size: 16px;}
     
     h2 {
-        font-size: 13px;}
+        font-size: 12px;}
     
 }
 
 /* TABLET */
 @media (min-width: 541px) and (max-width:720px) {
 
-    .cover__home {
-        height: 400px;
+    .img__home{
+        display: none;
+    }
+
+    .info {
+        padding-top: 1rem;
     }
 
     .cover__portfolio {
@@ -480,4 +490,9 @@ PORCENTAJES */
         height: 325px;
     }
 
+    h1 {
+        font-size: 24px;}
+    
+    h2 {
+        font-size: 13px;}
 }
