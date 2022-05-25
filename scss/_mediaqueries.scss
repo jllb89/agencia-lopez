@@ -1,0 +1,56 @@
+/* MOBILE */
+@media (min-width: 320px) and (max-width:540px) {
+
+    .img__home{
+        display: none;
+    }
+
+    .info {
+        padding-top: 1rem;
+    }
+
+    .cover__nosotros {
+        height: 250px;
+    }
+
+    .nav__sections {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        padding-right: 25px;}
+    
+    h1 {
+        font-size: 16px;}
+    
+    h2 {
+        font-size: 12px;}
+    
+}
+
+/* TABLET */
+@media (min-width: 541px) and (max-width:720px) {
+
+    .img__home{
+        display: none;
+    }
+
+    .info {
+        padding-top: 1rem;
+    }
+
+    .cover__portfolio {
+        height: 325px;
+    }
+
+    .cover__nosotros {
+        height: 325px;
+    }
+
+    h1 {
+        font-size: 24px;}
+    
+    h2 {
+        font-size: 13px;}
+}

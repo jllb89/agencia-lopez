@@ -1,0 +1,299 @@
+@charset "UTF-8";
+footer {
+  grid-area: footer;
+  align-items: center;
+  margin-top: auto;
+  background-color: black;
+  height: fit-content;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+
+.footer__text {
+  font-family: "textos";
+  font-size: 12px;
+  color: #ffffff; }
+
+.form-outline {
+  width: 300px; }
+
+.email__form {
+  border-radius: 0; }
+
+.email {
+  width: 200px;
+  height: 100px; }
+
+/* navbar BOOTSTRAP */
+.navbar-toggler {
+  border: none;
+  border-radius: 0;
+  outline-color: none;
+  box-shadow: none; }
+
+.navbar-toggler-icon {
+  border: none;
+  border-radius: 0;
+  outline-color: none;
+  box-shadow: none; }
+
+/* MOBILE */
+@media (min-width: 320px) and (max-width: 540px) {
+  .img__home {
+    display: none; }
+  .info {
+    padding-top: 1rem; }
+  .cover__nosotros {
+    height: 250px; }
+  .nav__sections {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-right: 25px; }
+  h1 {
+    font-size: 16px; }
+  h2 {
+    font-size: 12px; } }
+
+/* TABLET */
+@media (min-width: 541px) and (max-width: 720px) {
+  .img__home {
+    display: none; }
+  .info {
+    padding-top: 1rem; }
+  .cover__portfolio {
+    height: 325px; }
+  .cover__nosotros {
+    height: 325px; }
+  h1 {
+    font-size: 24px; }
+  h2 {
+    font-size: 13px; } }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 6;
+  font-family: "textos"; }
+
+/* TIPOGRAFÍAS */
+@font-face {
+  font-family: "titulos";
+  src: url("../recursos/Favorit-RegularExtended.otf"); }
+
+@font-face {
+  font-family: "textos";
+  src: url("../recursos/Favorit-Light.otf"); }
+
+/* ESTILOS DE TEXTOS */
+h1 {
+  color: black;
+  font-size: 36px;
+  font-family: "titulos";
+  text-align: left; }
+
+h2 {
+  font-size: 18px;
+  font-family: "titulos"; }
+
+h3 {
+  font-size: 12px;
+  font-family: "titulos";
+  padding-top: 10px; }
+
+h4 {
+  font-size: 14px;
+  font-family: "textos";
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  color: white;
+  text-align: left; }
+
+/* ESTILO PARA BOTONES */
+button {
+  height: 40px;
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+  margin: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "titulos";
+  transition: all .5s; }
+  button:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white; }
+
+.social {
+  transition: .2s; }
+  .social:hover {
+    transform: scale(1.2); }
+
+.button__mailing {
+  background-color: black;
+  color: white;
+  font-family: "titulos";
+  font-size: 12px;
+  border: 0.5px solid white;
+  width: fit-content;
+  padding-left: 20px;
+  margin-left: 50px; }
+  .button__mailing:hover {
+    transform: scale(1.02);
+    background-color: white;
+    color: black; }
+
+.button__form {
+  font-size: 12px;
+  margin-left: 0px; }
+
+input {
+  font-family: textos; }
+
+/* ESTILOS LISTAS */
+a {
+  font-family: "titulos";
+  text-decoration: none;
+  font-size: 11px;
+  color: white; }
+
+li {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  transition: all .5s; }
+
+li:hover {
+  text-decoration: underline;
+  transform: translate(5px); }
+
+/* NO PADDING PARA ELIMINAR EL PADDING QUE TRAE BOOTSTRAP POR DEFAULT */
+.nopadding {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+/* INDEX - ACERCA DE LA AGENCIA */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  font-size: 13px;
+  padding-right: 30px;
+  padding-left: 30px; }
+
+/* TEXTO PORTAFOLIO */
+.portafolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 30px;
+  padding-right: 50px;
+  padding-left: 50px; }
+
+/* FORMULARIO DE CONTACTO */
+.cover__contacto {
+  padding-top: 60px; }
+
+.contact__subtitle {
+  padding-left: 20px; }
+
+.contacto__subtitle {
+  text-align: left; }
+
+.contact__form {
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  background-color: white; }
+
+.contact-form {
+  width: 40%; }
+
+.form__title {
+  font-size: 16px;
+  padding-bottom: 20px; }
+
+.form__title__2 {
+  font-size: 16px;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+/* ESTILO PARA LISTA DE SERVICIOS */
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .services__list {
+    margin: 20px;
+    padding: 20px;
+    font-family: "titulos";
+    border-bottom: 0.5px solid black;
+    width: fit-content;
+    transition: all .5s; }
+  .services__list:hover {
+    transform: translate(20px); }
+
+/* SECCIÓN NOSOTROS */
+.main__nosotros {
+  background-image: url("../recursos/nosotros.jpg");
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  padding-left: 20px; }
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: flex-start;
+  padding: 10px; }
+
+.employee {
+  margin: 25px;
+  border: .5px solid #000000;
+  width: fit-content;
+  transition: all 1s; }
+  .employee:hover {
+    background-color: black;
+    color: white; }
+  .employee__photo {
+    width: 300px; }
+  .employee__name {
+    padding: 10px; }
+  .employee__position {
+    padding: 10px; }
+
+.calltoaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.title {
+  padding-left: 20px; }

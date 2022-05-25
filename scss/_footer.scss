@@ -1,0 +1,32 @@
+
+footer {
+    grid-area: footer;
+    align-items: center;
+    margin-top: auto;
+    background-color: $color-principal;
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;}
+
+.footer__text {
+    font-family: "textos";
+    font-size: 12px;
+    color: #ffffff;}
+
+.form-outline {
+    width: 300px;
+}
+
+.email__form {
+    border-radius: 0;
+}
+
+.email {
+    width:200px;
+    height: 100px;
+}

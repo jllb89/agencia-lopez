@@ -1,0 +1,279 @@
+@import 'variables';
+@import 'footer';
+@import 'header';
+@import 'mediaqueries';
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    font-size: 6;
+    font-family: "textos";}
+
+/* TIPOGRAFÍAS */
+
+ @font-face {
+        font-family: "titulos";
+        src: url("../recursos/Favorit-RegularExtended.otf");
+    }
+
+@font-face {
+    font-family: "textos";
+    src: url("../recursos/Favorit-Light.otf");
+}
+
+/* ESTILOS DE TEXTOS */
+
+h1 {
+    color:$color-principal;
+    font-size: 36px;
+    font-family: "titulos";
+    text-align: left;
+    }
+
+h2 {
+    font-size: 18px;
+    font-family: "titulos";}
+
+h3 {
+    font-size: 12px;
+    font-family: "titulos";
+    padding-top: 10px;}
+
+h4 {
+    font-size: 14px;
+    font-family: "textos";
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    color: $color-contraste;
+    text-align: left;}
+
+/* ESTILO PARA BOTONES */
+
+button {
+    height:40px;
+    color: $color-principal;
+    background-color: $color-contraste;
+    border: 2px solid $color-principal;
+    margin: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "titulos";
+    transition: all .5s;
+    
+        &:hover {
+            transform: scale(1.05);
+            background-color: $color-principal;
+            color: $color-contraste
+        }
+    }
+
+.social {
+    transition: .2s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.button__mailing {
+    background-color: black;
+    color: $color-contraste;
+    font-family: "titulos";
+    font-size: 12px;
+    border: .5px solid $color-contraste;
+    width: fit-content;
+    padding-left: 20px;
+    margin-left: 50px;
+
+        &:hover {
+            transform: scale(1.02);
+            background-color: $color-contraste;
+            color: $color-principal;
+    }
+}
+
+.button__form {
+    font-size: 12px;
+    margin-left: 0px;
+}
+
+input {
+    font-family: textos;
+}
+
+/* ESTILOS LISTAS */
+
+a {
+    font-family:"titulos";
+    text-decoration: none;
+    font-size: 11px;
+    color:$color-contraste}
+
+li {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row;
+    transition: all .5s;}
+
+li:hover {
+    text-decoration: underline;
+    transform: translate(5px);
+}
+
+/* NO PADDING PARA ELIMINAR EL PADDING QUE TRAE BOOTSTRAP POR DEFAULT */
+
+.nopadding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* INDEX - ACERCA DE LA AGENCIA */
+
+.info {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    font-size: 13px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
+/* TEXTO PORTAFOLIO */
+
+.portafolio {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.cover__contacto {
+    padding-top: 60px;
+}
+
+.contact__subtitle {padding-left: 20px;}
+
+.contacto__subtitle {text-align: left;}
+
+.contact__form {
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    background-color: $color-contraste;}
+
+.contact-form {
+    width:40%
+}
+
+.form__title {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.form__title__2 {
+    font-size: 16px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* ESTILO PARA LISTA DE SERVICIOS */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__list {
+        margin: 20px;
+        padding: 20px;
+        font-family: "titulos";
+        border-bottom: .5px solid $color-principal;
+        width: fit-content;
+        transition: all .5s; 
+    }
+
+    &__list:hover {
+        transform: translate(20px)
+    }
+}
+
+/* SECCIÓN NOSOTROS */
+
+.main {
+    &__nosotros{
+    background-image: url("../recursos/nosotros.jpg");
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    }
+}
+
+.card {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-start;
+    padding:10px;}
+
+.employee {
+    margin: 25px;
+    border: .5px solid #000000;
+    width:fit-content;
+    transition: all 1s;
+
+        &:hover {
+        background-color: $color-principal;
+        color: $color-contraste;
+        }
+
+        &__photo {
+        width:300px
+        }
+
+        &__name {
+        padding: 10px;
+        }
+
+        &__position {
+        padding: 10px;
+        }
+    }
+
+.calltoaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+.title {
+    padding-left: 20px;}
+
+
+
