@@ -46,7 +46,8 @@ h4 {
     padding-top: 20px;
     padding-left: 30px;
     padding-bottom: 20px;
-    text-align: left;}
+    text-align: left;
+    color: $color-contraste;}
 
 /* ESTILO PARA BOTONES */
 
@@ -188,6 +189,10 @@ li:hover {
     font-size: 16px;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+.form-group {
+    margin-top: 40px;
 }
 
 /* ESTILO PARA LISTA DE SERVICIOS */
